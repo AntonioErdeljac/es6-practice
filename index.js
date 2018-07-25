@@ -1,25 +1,14 @@
 function getValue(condition) {
   if (condition) {
-    var value = 'blue';
+    let value = 'blue';
 
-    return value;
+    //rest of code
   } else {
-    //value exists as undefined
+    //value does not exist here
   }
 
-  //value exists as undefined
+  //value does not exist here
 }
 
-//the code above is equal to
 
-function getValue(condition) {
-  var value;
-
-  if (condition) {
-    value = 'blue';
-
-    return value;
-  }
-
-  return null;
-}
+//no hoisting
