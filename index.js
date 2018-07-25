@@ -1,14 +1,7 @@
-function getValue(condition) {
-  if (condition) {
-    let value = 'blue';
+var count = 30;
 
-    //rest of code
-  } else {
-    //value does not exist here
-  }
+let count = 40; //error
 
-  //value does not exist here
+if (condition) {
+  let count = 40; // no error
 }
-
-
-//no hoisting
