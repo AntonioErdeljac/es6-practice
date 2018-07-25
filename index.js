@@ -1,7 +1,19 @@
-var count = 30;
+const maxItems = 30;
 
-let count = 40; //error
+const name; //error
+
 
 if (condition) {
-  let count = 40; // no error
+  const maxItems = 5;
 }
+
+//maxItems is not available here
+
+var message = 'Hello';
+let age = 25;
+
+const message = 'Goodbye!' //error
+const age = 15 //error
+
+const maxItems2 = 5;
+maxItems2 = 6; //error
