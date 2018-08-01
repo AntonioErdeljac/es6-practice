@@ -1,19 +1,15 @@
-const maxItems = 30;
+let person = {
+  getGreeting() {
+    return "Hello";
+  },
+};
 
-const name; //error
+let friend = {
+  getGreeting() {
+    return super.getGreeting() + ', Hi!';
+  },
+};
 
+Object.setPrototypeOf(friend, person);
 
-if (condition) {
-  const maxItems = 5;
-}
-
-//maxItems is not available here
-
-var message = 'Hello';
-let age = 25;
-
-const message = 'Goodbye!' //error
-const age = 15 //error
-
-const maxItems2 = 5;
-maxItems2 = 6; //error
+console.log(friend.getGreeting());
