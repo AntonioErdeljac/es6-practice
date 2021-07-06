@@ -1,25 +1,15 @@
-function getValue(condition) {
-  if (condition) {
-    var value = 'blue';
+let person = {
+  getGreeting() {
+    return "Hello";
+  },
+};
 
-    return value;
-  } else {
-    //value exists as undefined
-  }
+let friend = {
+  getGreeting() {
+    return super.getGreeting() + ', Hi!';
+  },
+};
 
-  //value exists as undefined
-}
+Object.setPrototypeOf(friend, person);
 
-//the code above is equal to
-
-function getValue(condition) {
-  var value;
-
-  if (condition) {
-    value = 'blue';
-
-    return value;
-  }
-
-  return null;
-}
+console.log(friend.getGreeting());
